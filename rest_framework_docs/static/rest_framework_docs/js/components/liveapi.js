@@ -31,6 +31,7 @@ var LiveAPIEndpoints = React.createClass({
     if (this.refs.request.state.headers.authorization) {
       headers['Authorization'] = this.refs.request.state.headers.authorization;
     };
+    headers['Accept'] = 'application/json';
 
     var data = this.getData();
 

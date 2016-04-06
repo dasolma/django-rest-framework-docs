@@ -56,7 +56,7 @@
         <div id="{{ endpoint.path|slugify }}" class="panel-collapse collapse" role="tabpanel">
           <div class="panel-body">
             {% if endpoint.docstring %}
-            <p class="lead">{{ endpoint.docstring }}</p>
+            <pre>{{ endpoint.docstring }}</pre>
             {% endif %}
 
             {% if endpoint.errors %}
